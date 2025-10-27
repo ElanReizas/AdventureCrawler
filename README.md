@@ -33,16 +33,6 @@ This POC is intentionally minimal and console-based to keep the scope small. It 
 ### Build and Run (CLI)
 Requires Java 17+ (`javac`, `java`).
 
-```bash
-# From repo root
-javac --release 17 -d out $(find src/main/java -name "*.java")
-java -cp out com.adventure.crawler.Game
-```
-
-Tip: to verify quickly, you can auto-quit with a save using:
-```bash
-printf q | java -cp out com.adventure.crawler.Game
-```
 
 ### Run in VS Code or IntelliJ
 - Open the folder, mark `src/main/java` as a source root if prompted.
@@ -53,14 +43,11 @@ printf q | java -cp out com.adventure.crawler.Game
 - On next launch, the game will load the save and resume.
 - On death, the save file is deleted (permadeath). `saves/highscore.txt` keeps your best gold count.
 
-### Next Steps (Optional)
+### Next Steps
 - Swap ASCII for JavaFX or LibGDX tile rendering
 - Add classes (e.g., Warrior/Mage) and elemental damage
 - Improve procedural fairness (e.g., guaranteed reachable loot, difficulty ramp)
 - Field-of-view, fog of war, more enemy types and items
-
-### License
-MIT (or adapt to your needs).
 
 ```mermaid
 classDiagram
