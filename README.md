@@ -5,7 +5,7 @@ A tiny, self-contained Java 17 roguelike dungeon crawler proof‑of‑concept fo
 - Turn-based movement with live enemy responses after the player acts
 - ASCII rendering, WASD movement, basic combat/looting, lightweight save/load
 
-This POC is intentionally minimal and console-based to keep the scope small. It is structured so you can later swap the renderer/input layer for JavaFX or LibGDX.
+This POC is intentionally minimal and console-based to keep the scope small. It is structured to later swap the renderer/input layer for JavaFX or LibGDX.
 
 ### Features
 - New randomized dungeon on each run (seeded by current time)
