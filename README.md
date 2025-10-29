@@ -124,9 +124,9 @@ classDiagram
     Game --> Dungeon
     Game --> Renderer
     Game --> SaveManager
-    Dungeon o-- Tile
-    Dungeon --> Enemy
-    Dungeon --> Item
+    Dungeon *-- Tile
+    Dungeon o-- Enemy
+    Dungeon o-- Item
     Player --> Item
-    Enemy --> Player
+    Enemy -- Player
 ```
