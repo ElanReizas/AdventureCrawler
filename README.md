@@ -129,4 +129,5 @@ classDiagram
     Dungeon o-- Item
     Player --> Item
     Enemy -- Player
+    Dungeon o-- Player
 ```
